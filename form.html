@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IRCTC Individual Registration</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2 { color: #003366; }
+    fieldset { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; }
+    label { display: block; margin-top: 10px; }
+    input, select { width: 100%; padding: 8px; margin-top: 5px; }
+    .submit-btn { background-color: #003366; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h1>IRCTC Individual Registration</h1>
+
+  <form>
+    <!-- Login Details -->
+    <fieldset>
+      <legend><h2>Login Details</h2></legend>
+      <label>User Name:</label>
+      <input type="text" name="username" required>
+
+      <label>Password:</label>
+      <input type="password" name="password" required>
+
+      <label>Confirm Password:</label>
+      <input type="password" name="confirm_password" required>
+
+      <label>Preferred Language:</label>
+      <select name="language">
+        <option value="english">English</option>
+        <option value="hindi">Hindi</option>
+      </select>
+    </fieldset>
+
+    <!-- Personal Details -->
+    <fieldset>
+      <legend><h2>Personal Details</h2></legend>
+      <label>First Name:</label>
+      <input type="text" name="first_name" required>
+
+      <label>Middle Name:</label>
+      <input type="text" name="middle_name">
+
+      <label>Last Name:</label>
+      <input type="text" name="last_name" required>
+
+      <label>Gender:</label>
+      <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label>Marital Status:</label>
+      <select name="marital_status">
+        <option value="married">Married</option>
+        <option value="unmarried">Unmarried</option>
+      </select>
+
+      <label>Date of Birth:</label>
+      <input type="date" name="dob" required>
+
+      <label>Occupation:</label>
+      <input type="text" name="occupation">
+
+      <label>Aadhaar Number (optional):</label>
+      <input type="text" name="aadhaar">
+
+      <label>PAN Number (optional):</label>
+      <input type="text" name="pan">
+    </fieldset>
+
+    <!-- Contact Details -->
+    <fieldset>
+      <legend><h2>Contact Details</h2></legend>
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Mobile Number:</label>
+      <input type="tel" name="mobile" required>
+
+      <label>Nationality:</label>
+      <input type="text" name="nationality" required>
+    </fieldset>
+
+    <!-- Residential Address -->
+    <fieldset>
+      <legend><h2>Residential Address</h2></legend>
+      <label>Flat/Door/Block No.:</label>
+      <input type="text" name="res_flat">
+
+      <label>Street/Lane:</label>
+      <input type="text" name="res_street">
+
+      <label>Area/Locality:</label>
+      <input type="text" name="res_area">
+
+      <label>Pin Code:</label>
+      <input type="text" name="res_pincode">
+
+      <label>State:</label>
+      <input type="text" name="res_state">
+
+      <label>City/Town:</label>
+      <input type="text" name="res_city">
+
+      <label>Post Office:</label>
+      <input type="text" name="res_postoffice">
+
+      <label>Phone Number:</label>
+      <input type="tel" name="res_phone">
+    </fieldset>
+
+    <!-- Office Address (Optional) -->
+    <fieldset>
+      <legend><h2>Office Address (Optional)</h2></legend>
+      <label>Flat/Door/Block No.:</label>
+      <input type="text" name="off_flat">
+
+      <label>Street/Lane:</label>
+      <input type="text" name="off_street">
+
+      <label>Area/Locality:</label>
+      <input type="text" name="off_area">
+
+      <label>Pin Code:</label>
+      <input type="text" name="off_pincode">
+
+      <label>State:</label>
+      <input type="text" name="off_state">
+
+      <label>City/Town:</label>
+      <input type="text" name="off_city">
+
+      <label>Post Office:</label>
+      <input type="text" name="off_postoffice">
+
+      <label>Phone Number:</label>
+      <input type="tel" name="off_phone">
+    </fieldset>
+
+    <!-- Captcha -->
+    <fieldset>
+      <legend><h2>Captcha Verification</h2></legend>
+      <label>Enter Captcha: <strong>YAD9K</strong></label>
+      <input type="text" name="captcha" required>
+    </fieldset>
+
+    <button type="submit" class="submit-btn">Submit Registration Form >></button>
+  </form>
+
+</body>
+</html>
